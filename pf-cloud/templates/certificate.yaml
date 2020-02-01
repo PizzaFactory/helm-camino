@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: {{ .Values.name | quote }}
+spec:
+  commonName: {{ .Values.commonName | quote }}
+  dnsNames:
+  - {{ .Values.commonName | quote }}
+  - {{ printf "*.%s" .Values.commonName | quote }}
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
+  secretName: {{ .Values.name | quote }}
