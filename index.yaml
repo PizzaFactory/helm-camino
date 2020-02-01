@@ -3,11 +3,11 @@ entries:
   camino:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-01T16:39:19.171170004+09:00"
+    created: "2020-02-01T16:53:30.572417008+09:00"
     description: A Helm chart for Kubernetes
-    digest: f88f4d28b7f7a7d85d49513b85478e2eaf94c525bb7f1e9d5a96231ca9f6b08e
+    digest: 1fc438b77814dd7bb90097a33282492191326ce342815c0ddd80f29853adbee6
     name: camino
     urls:
     - camino-0.1.0.tgz
     version: 0.1.0
-generated: "2020-02-01T16:39:19.170916612+09:00"
+generated: "2020-02-01T16:53:30.572081814+09:00"

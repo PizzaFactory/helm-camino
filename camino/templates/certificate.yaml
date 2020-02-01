@@ -6,7 +6,7 @@ spec:
   commonName: {{ .Values.commonName | quote }}
   dnsNames:
   - {{ .Values.commonName | quote }}
-  - "*.{{- .Values.commonName | quote }}"
+  - {{ printf "*.%s" .Values.commonName | quote }}
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt-prod
